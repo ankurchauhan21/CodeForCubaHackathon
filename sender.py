@@ -6,8 +6,8 @@ import smtplib
 
 class Sender(object):
   def send_news(self, user_email, user_topics):
-    subject = 'Welcome to Janela - window to the world!!!'
-    body = 'Your morning digest from Code for Cuba Hackathon\n\n'
+    subject = 'Janela - window to the world!!!'
+    body = 'News from Code for Cuba Hackathon\n\n'
     body += self.news.get_news(user_topics)
     print ('Sending news to ' + user_email + " for topics " + str(user_topics))
     self._send_email(user_email, subject, body)

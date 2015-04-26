@@ -1,6 +1,6 @@
 class Topics(object):
   def __init__(self):
-    self.TOPICS = ['sports', 'technology', 'science']
+    self.TOPICS = ['sports', 'technology', 'lifestyle']
 
   def parse_topics(self, text):
     text = text.lower()

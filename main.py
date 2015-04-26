@@ -15,7 +15,7 @@ def main():
         sender.send_news(user.email, list(user.topics_set))
         user.modified = False
     print ('Sleeping')
-    sleep(20)
+    sleep(10)
     print ('Waking up')
 
 if __name__ == "__main__":

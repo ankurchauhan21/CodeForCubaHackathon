@@ -1,15 +1,13 @@
-Así se ve por dentro un Apple Watch
+TECNOLOGIA
+TECNOLOGY
 
-NUEVA YORK (CNNMoney) — Los primeros relojes de Apple ya están llegando a las manos de los consumidores, y  algunos no han tardado en desmembrarlos para conocerlos por dentro.
 
-En una publicación de blog que incluye un video, los gurús de la reparación de iFixit mostraron cómo abrir el Apple Watch, sacarle las entrañas y volverlo a armar.
+La agencia espacial japonesa enviará un vehículo explorador a la Luna
+La agencia espacial japonesa anunció esta semana que el país podría poner un vehículo explorador no tripulado en la superficie de la Luna en 2018.China, Estados Unidos y la antigua Unión Soviética son las únicas naciones que hasta ahora han hecho que una nave descienda en la superficie de la luna.
 
-Bueno, armar es un decir, porque ya no funcionó: e Se desgarró en un mar de cables cuando levantaron el procesador "S1" del reloj.
+Google activa su 'buscador de personas' tras el terremoto en Nepal
+Google puso en marcha su herramienta 'People Finder' (o buscador de personas en español) para ayudar a familiares y amigos a dar con el paradero de sus seres queridos en Nepal tras el terremoto de este sábado.
 
-Esa es una mala noticia si quieres hacerle algo loco a tu reloj como actualizar el procesador, pero si sólo quieres sustituir la pantalla o la batería, esos cambios pueden ser más fáciles y sin necesidad de dejarlo inservible, como una pulsera Livestrong pero de 350 dólares.
 
-iFixit dijo que el cambio más simple fue retirarle la correa o extensible, con sólo presionar el botón de liberación en la parte posterior del reloj la correa se desliza para sacarla.
-luego sacaron las armas de grueso calibre: una hoja de afeitar y pinzas. El Apple Watch no tiene tornillos externos, se mantiene unido con pegamento. Así que si vas a reemplazar una pieza, tendrás que raspar (con la hoja de afeitar) el pegamento que mantiene la pantalla en su sitio.
-
-Después de quitar la pantalla, la batería y la "Tapic Engine" aparecen justo debajo. La batería se mantiene en su lugar con un poco de pegamento, pero no demasiado, puede ser extraída (aquí es donde las pinzas son útiles).
-
+Apple watch ecosystem
+El Apple watch se lanzará con más de 3000 aplicaciones La mayoría de las aplicaciones del reloj son el resultado de los desarrolladores que extendieron sus aplicaciones iOS existentes para incluir soporte Watch, por supuesto, pero App Annie rastreó 889 aplicaciones - o el 29% de la muestra total - construidas sólo para el reloj . La compañía dijo que fue capaz de deducir esto del hecho de que la primera versión de la aplicación se ha desarrollado en las últimas dos semanas , que es un medio bastante fiables para determinar qué aplicaciones fueron diseñadas con el nuevo SmartWatch en mente.
