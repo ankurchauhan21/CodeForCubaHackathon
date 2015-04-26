@@ -16,7 +16,7 @@ class Receiver(object):
     conn = imaplib.IMAP4_SSL(self.IMAP_GMAIL_HOST, self.IMAP_GMAIL_PORT)
     conn.login(self.login_username, self.login_password)
     conn.select()
-    typ, data = conn.search(None, 'ALL')
+    typ, data = conn.search(None, 'UNSEEN')
     try:
       for uid in data[0].split():
         response, results = conn.fetch(uid, '(BODY.PEEK[] FLAGS X-GM-THRID X-GM-MSGID X-GM-LABELS)')
@@ -34,6 +34,7 @@ class Receiver(object):
               html = content.get_payload(decode=True)
         elif self.message.get_content_maintype() == "text":
           body = message.get_payload()
+        typ, response = conn.store(uid, '+FLAGS', r'(\Seen)')
         full_text = subject + " " + body
         user_topics = self.topics.parse_topics(full_text)
         users.update_user(user_email, user_topics)
@@ -44,5 +45,5 @@ class Receiver(object):
         pass
         conn.logout()
 
-users = Users()
-Receiver().read_emails(users)
+#users = Users()
+#Receiver().read_emails(users)
