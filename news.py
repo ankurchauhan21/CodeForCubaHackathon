@@ -4,7 +4,7 @@ class News(object):
   def get_news(self, topics):
     stories = ""
     for topic in topics:
-      stories += "In the World of " + topic.upper() + "\n\n"
+      #stories += "In the World of " + topic.upper() + "\n\n"
       stories += self.news[topic] + "\n\n"
     return stories
 
