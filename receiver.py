@@ -1,14 +1,18 @@
 import imaplib
 import email
 
+from users import Users
+from topics import Topics
+
 class Receiver(object):
   def __init__(self):
     self.IMAP_GMAIL_HOST = "imap.gmail.com"
     self.IMAP_GMAIL_PORT = 993
     self.login_username = "news.janela"
     self.login_password = "windowcuba"
+    self.topics = Topics()
 
-  def read_emails(self):
+  def read_emails(self, users):
     conn = imaplib.IMAP4_SSL(self.IMAP_GMAIL_HOST, self.IMAP_GMAIL_PORT)
     conn.login(self.login_username, self.login_password)
     conn.select()
@@ -31,8 +35,8 @@ class Receiver(object):
         elif self.message.get_content_maintype() == "text":
           body = message.get_payload()
         full_text = subject + " " + body
-        print(user_email)
-        print(full_text)
+        user_topics = self.topics.parse_topics(full_text)
+        users.update_user(user_email, user_topics)
     finally:
       try:
         conn.close()
@@ -40,4 +44,5 @@ class Receiver(object):
         pass
         conn.logout()
 
-Receiver().read_emails()
+users = Users()
+Receiver().read_emails(users)

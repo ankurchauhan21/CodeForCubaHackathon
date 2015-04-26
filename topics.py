@@ -8,6 +8,6 @@ class Topics(object):
     for topic in self.TOPICS:
       if topic in text:
         topics.append(topic)
-    print (topics)
+    return topics
 
 #Topics().parse_topics("Technology is not in ScIEnce")
