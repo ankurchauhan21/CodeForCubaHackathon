@@ -4,11 +4,13 @@ from email.MIMEText import MIMEText
 import smtplib
 
 class Sender(object):
-  def send_news(self, user):
+  def send_news(self, user_email, user_topics):
     subject = 'Welcome to Janela - window to the world!!!'
-    body = 'Your morning digest from Code for Cuba Hackathon'
-    print ('Sending news to ' + user)
-    self._send_email(user, subject, body)
+    body = 'Your morning digest from Code for Cuba Hackathon\n\n'
+    for user_topic in user_topics:
+      body += user_topic + '\n'
+    print ('Sending news to ' + user_email)
+    self._send_email(user_email, subject, body)
 
   def __init__(self):
     self.username = 'news.janela'
@@ -28,4 +30,4 @@ class Sender(object):
     server.sendmail(self.fromaddr, user, text)
     server.quit()
 
-#Sender().send_news('ankurchauhan21@gmail.com')
+#Sender().send_news('ankurchauhan21@gmail.com', ['science', 'sports'])
