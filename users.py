@@ -1,4 +1,5 @@
 from sets import Set
+from topics import Topics
 
 class User(object):
   def __init__(self, email, topics):
@@ -15,6 +16,8 @@ class User(object):
 
   def _add_topics(self, topics):
     self.modified = True
+    if not topics:
+      topics = Topics().TOPICS
     for topic in topics:
       self.topics_set.add(topic)
 
@@ -33,6 +36,8 @@ class Users(object):
       self.users_map[user_email] = user
       print ("User modified " + user.print_self())
 
-users = Users()
-users.update_user('ankurch@gmail.com', ['science', 'economy'])
-users.update_user('ankurch@gmail.com', ['tech'])
+#users = Users()
+#users.update_user('ankurch@gmail.com', ['science', 'economy'])
+#users.update_user('ankurch@gmail.com', ['sports'])
+#users.update_user('none1@gmail.com', None)
+#users.update_user('none2@gmail.com', [])
